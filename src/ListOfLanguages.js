@@ -20,6 +20,85 @@ export default function ListOfLanguages () {
         <div>
           <Header/>
         <div>
+                <MediaQuery minWidth={0} maxWidth={399}>
+        <Box
+      sx={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        '& > :not(style)': {
+          m: 1,
+          width: "50%",
+          height: 500,  
+          marginLeft:"25%"
+        },
+      }}
+    >
+      
+      
+      <Paper elevation={8} >
+
+      {/* <ul style={{marginTop:"5%"}}>
+              <li>Coffee</li>
+              <li>Tea</li>
+              <li>Milk</li>
+        </ul> */}
+        {/* <div style={{ display: 'flex'}}>
+                <h5 style={{ color: 'red', float:"left" }}>No Bullet</h5>
+               
+                <h5 style={{ color: 'red', float:"right" }}>List-Decimal</h5>
+               
+            </div> */}
+                  <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} style={{fontWeight:"bolder", padding:"4%"}} >
+        <Grid item xs={12} style={{padding:"2%"}} >
+        <li> C Language </li>
+        </Grid>
+        <Grid item  xs={12} style={{padding:"2%"}} >
+        <li> Python </li>
+        </Grid>
+       
+        <Grid item xs={12} style={{padding:"2%"}}>
+        <li>React JS</li> 
+        </Grid>
+        <Grid item  xs={12} style={{padding:"2%"}} >
+        <li>Node JS</li> 
+        
+        </Grid>
+
+        <Grid item xs={12} style={{padding:"2%"}}>
+         <li> MongoDB/Database </li>
+        </Grid>
+        <Grid item  xs={12} style={{padding:"2%"}} >
+        <li>MySQL/Database </li>
+        </Grid>
+
+        <Grid item xs={12} style={{padding:"2%"}} >
+        <li>  Express</li>
+        </Grid>
+        <Grid item  xs={12} style={{padding:"2%"}} >
+        <li>AWS Cloud</li>
+        </Grid>
+
+        <Grid item xs={12} style={{padding:"2%"}} >
+        <li> Website Applications </li>
+        </Grid>
+        <Grid item xs={12} style={{padding:"2%"}} >
+        <li> Desktop Applications </li>
+        </Grid>
+        <Grid item  xs={12} style={{padding:"2%"}} >
+        <li> Firebase</li>
+        </Grid>
+
+        <Grid item xs={12} style={{padding:"2%"}}>
+        <li> Heroku</li>
+        </Grid>
+        <Grid item  xs={12} style={{padding:"2%"}} >
+        <li> DevOps</li>
+        </Grid>
+      </Grid>
+
+      </Paper>
+    </Box>
+    </MediaQuery>
         <MediaQuery minWidth={400} maxWidth={767}>
         <Box
       sx={{
